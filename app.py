@@ -49,11 +49,11 @@ def getBookstoreInfo(data):
         expander.subheader("Introduction")
         st.write(d["intro"])
         expander.subheader("Address")
-        st.write(d["Address"])
+        st.write(d["address"])
         expander.subheader("Open Time")
-        st.write(d["Open Time"])
+        st.write(d["openTime"])
         expander.subheader("Email")
-        st.write(d["Email"])
+        st.write(d["email"])
         elist.append(expander)
     return elist
 
