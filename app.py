@@ -46,7 +46,7 @@ def getBookstoreInfo(data):
         expander = st.expander(d["name"])
         expander.image(d["representImage"])
         expander.metric("hitRate", d["hitRate"])
-        expander.subheader("Introduction")
+        expander.subheader("intro")
         st.write(d["Introduction"])
         expander.subheader("Address")
         st.write(d["Address"])
