@@ -47,13 +47,13 @@ def getBookstoreInfo(data):
         expander.image(d["representImage"])
         expander.metric("hitRate", d["hitRate"])
         expander.subheader("Introduction")
-        st.write(d["intro"])
+        expander.write(d["intro"])
         expander.subheader("Address")
-        st.write(d["address"])
+        expander.write(d["address"])
         expander.subheader("Open Time")
-        st.write(d["openTime"])
+        expander.write(d["openTime"])
         expander.subheader("Email")
-        st.write(d["email"])
+        expander.write(d["email"])
         elist.append(expander)
     return elist
 
