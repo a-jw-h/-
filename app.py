@@ -67,6 +67,7 @@ def app():
     num = len(specificbookstore)
     st.write(f"總共有{num}項結果", num)
     specificbookstore.sort(key = lambda x:x["hitRate"])
+    specificbookstore.reverse()
     bookstoreinfo = getBookstoreInfo(specificbookstore)
 
 
